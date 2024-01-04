@@ -1,6 +1,9 @@
-# React + TypeScript + Vite
+# CV Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Utilising React + TypeScript and Vite
+This website aims to be the hub for my other projects and showcase some of my basic skills.
+
+## Some Details regarding the template:
 
 Currently, two official plugins are available:
 
