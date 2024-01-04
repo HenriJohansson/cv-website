@@ -1,0 +1,7 @@
+name: production
+run-name: ${{ github.actor }} is pushing to production
+on: [push]
+jobs:
+  steps:
+    - name: Check out the repository to the runner
+      uses: actions/checkout@v4
