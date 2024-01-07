@@ -1,18 +1,15 @@
-import { useState } from 'react'
-import PaperCv from './components/Cards/PaperCv'
+import Cv from '@/components/Links/Cv'
+//import PaperCv from '@/components/CV/PaperCv'
 import './App.css'
 
 function App() {
-  const [show, toggleShow] = useState(false)
   return (
     <>
-      <h1>My CV Website</h1>
+      <h1>My Name Is Henri Johansson</h1>
       <div className="card">
-        <button onClick={() => toggleShow(!show)}>
-          {show ? "Hide" : "Show"}
-        </button>
+        <Cv/>
       </div>
-      {show && <PaperCv />}
+      
       <p className="about">
         This is the basic main page. 
       </p>
