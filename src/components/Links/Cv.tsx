@@ -1,6 +1,6 @@
 import "./Cv.css"
 import { useState } from "react";
-import PaperCv from '@/components/CV/PaperCv'
+import PaperCv from '@/components/Links/CV/IframeCv'
 
 function CvLink(){
     const [show, toggleShow] = useState(false);
