@@ -1,0 +1,16 @@
+{
+    "title": "Welcome to my CV Page",
+    "nav-guide": {
+      "part1": "Switch language between english and finnish using buttons above."
+    },
+    "controls": {
+        "show": "Show",
+        "hide": "Hide",
+        "expand": "More",
+        "show-less": "Show Less"
+    },
+    "cv-link": "https://docs.google.com/document/d/e/2PACX-1vR_4_d29AjjqrlhiCP89xHbKaprqQPaG8nlgRdChmAI5lysVZtvGEB58vNIYe1zA7xbpZCIg9z6Zcia/pub?embedded=true",
+    "footer": {
+        "contact": ""
+    }
+  }
