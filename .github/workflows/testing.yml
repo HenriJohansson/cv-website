@@ -1,5 +1,5 @@
-name: production
-run-name: ${{ github.actor }} is pushing to production
+name: testing
+run-name: ${{ github.actor }} running tests to allow pushing
 on: [push]
 jobs:
   steps:
