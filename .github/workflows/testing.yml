@@ -1,7 +1,9 @@
-name: testing
-run-name: ${{ github.actor }} running tests to allow pushing
-on: [push]
-jobs:
-  steps:
-    - name: Check out the repository to the runner
-      uses: actions/checkout@v4
+#
+# Under construction the testing workflow
+#name: testing
+#run-name: ${{ github.actor }} running tests to allow pushing
+#on: [push]
+#jobs:
+#  steps:
+#    - name: Check out the repository to the runner
+#      uses: actions/checkout@v4
