@@ -56,7 +56,9 @@ jobs:
         with:
           # Upload dist repository
           path: './dist'
-      - name: lets see the directory
+      - name: move to dist
+        run: cd ./dist
+      - name: print dist
         run: ls
       - name: Deploy to GitHub Pages
         id: deployment
