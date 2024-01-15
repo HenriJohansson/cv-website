@@ -1,5 +1,6 @@
+# https://vitejs.dev/guide/static-deploy
 # Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+name: Deploy to Pages
 
 on:
   # Runs on pushes targeting the default branch
@@ -27,18 +28,26 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18]
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Set up Node
+        # Set up with Node with pnpm https://pnpm.io/continuous-integration
+      - name: Set up pnpm actions
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      - name: Set up Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
-          node-version: 18
-          cache: 'npm'
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
       - name: Install dependencies
-        run: npm install
+        run: pnpm install
       - name: Build
-        run: npm run build
+        run: pnpm run build
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
