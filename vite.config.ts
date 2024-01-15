@@ -9,7 +9,7 @@ export default defineConfig(({ command, mode, isSsrBuild, isPreview }: ConfigEnv
   build: {
     assetsDir: 'assets'
   },
-  base: '/',
+  base: '/cv-website/',
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
