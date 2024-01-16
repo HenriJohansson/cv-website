@@ -13,7 +13,7 @@ function PaperCv() {
             <LinearProgress/>
             ) : null}
             <iframe //src="https://docs.google.com/document/d/e/2PACX-1vTcuHFPyXVTa8MnzEvDvsAtwQU-eCRqNGuh3WOZ0-tdL4cQghWuU_H64ZtI0blGWEHCKWeaDWExzvmD/pub?embedded=true"
-                src="https://docs.google.com/document/d/e/2PACX-1vR_4_d29AjjqrlhiCP89xHbKaprqQPaG8nlgRdChmAI5lysVZtvGEB58vNIYe1zA7xbpZCIg9z6Zcia/pub?embedded=true"
+                src="https://docs.google.com/document/d/e/2PACX-1vSzSr4y3V7X7CZzLts4lhEUw0IN1baK4-uay6OdVYainASBQ7ccySqyVDOQjxAmBMAUUUnWxJ-Z4voa/pub?embedded=true"
                 style={{
                     position: "relative",
                     height: "100%",
