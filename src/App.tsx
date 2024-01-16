@@ -8,7 +8,7 @@ function App() {
       <h1>My Name Is Henri Johansson</h1>
       <Cv/>
       <p className="about">
-        
+        Test if tied to main branch
       </p>
     </>
   )
