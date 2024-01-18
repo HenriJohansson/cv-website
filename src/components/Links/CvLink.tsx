@@ -7,7 +7,7 @@ function CvLink(){
 
     return (
         <button onClick={() => toggleShow(!show)} className={show ? 'wrapper' : 'btn'}>
-          {show ? "Hide" : "Show"}
+          {show ? "Close CV" : "Open CV"}
           {show && <PaperCv />}
         </button>
         )
