@@ -3,6 +3,8 @@
 Utilising React + TypeScript and Vite
 This website aims to be the hub for my other projects and showcase some of my basic skills.
 
+Website currently available at https://henrijohansson.github.io/cv-website/ on github pages.
+
 ## Some Details regarding the template:
 
 Currently, two official plugins are available:
