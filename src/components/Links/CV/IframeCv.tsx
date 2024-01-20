@@ -1,4 +1,4 @@
-import '@/components/Links/Cv.css'
+import '@/components/Links/CV/Cv.css'
 import { useState } from 'react';
 import LinearProgress from '@mui/material/LinearProgress';
 
