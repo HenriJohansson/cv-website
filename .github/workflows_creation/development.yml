@@ -1,0 +1,37 @@
+# Workflow for checking development branch before accepting it to git
+name: Deploy to Development
+
+on:
+  # Runs on pushes targeting the development branch
+  push:
+    branches:
+      - dev
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  # Linting job
+  run-linters:
+    name: Run eslint
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        # Set up with Node with pnpm https://pnpm.io/continuous-integration
+      - name: Set up pnpm actions
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+         - name: Use Node.js ${{ matrix.node-version }}
+          uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
+      - name: Install dependencies
+        run: pnpm install
+      - name: run linters
+        run: pnpm lint
