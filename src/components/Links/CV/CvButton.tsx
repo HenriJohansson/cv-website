@@ -6,9 +6,10 @@ import { useEffect } from "react";
 function CvLink(){
     const [show, toggleShow] = useState(false);
     
+    // eslint-disable-next-line
     useEffect(() => {
       toggleShow(!show);
-    }, [])
+    })
     const showToggleDelay = () => {
       if(show) {
         return <PaperCv />;
