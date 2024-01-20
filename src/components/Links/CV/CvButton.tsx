@@ -9,7 +9,7 @@ function CvLink(){
     // eslint-disable-next-line
     useEffect(() => {
       toggleShow(!show);
-    })
+    }, [])
     const showToggleDelay = () => {
       if(show) {
         return <PaperCv />;
