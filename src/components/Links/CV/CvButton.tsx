@@ -6,9 +6,8 @@ import { useEffect } from "react";
 function CvLink(){
     const [show, toggleShow] = useState(false);
     
-    // eslint-disable-next-line
     useEffect(() => {
-      toggleShow(!show);
+      toggleShow(true);
     }, [])
     const showToggleDelay = () => {
       if(show) {
