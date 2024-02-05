@@ -1,4 +1,3 @@
-import styles from "@styles/modules/icons.module.css"
 import { getNewId } from "@functions/idGenerator";
 
 type Props = {
@@ -11,7 +10,7 @@ const HyperLink = (props: Props) => {
   const setReturnJSX = (): JSX.Element => {
     if(typeof props.abbreviationOrIcon == "string"){
       returnValue = (
-      <abbr className={styles.link}>
+      <abbr className=".link">
         {props.abbreviationOrIcon}
       </abbr>
       );
@@ -28,7 +27,7 @@ const HyperLink = (props: Props) => {
   return (
     <>
       <a id={getNewId("link")} href={props.href} className="link" >
-      {setReturnJSX()}
+        {setReturnJSX()}
       </a>
     </>
   )

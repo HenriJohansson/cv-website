@@ -1,24 +1,48 @@
 @import url('@styles/animations/fade.css');
 
 .mainNav {
+  --nav-standard: 3rem;
+
   border-radius: 1rem;
+  top: 50vh;
+  left: var(--nav-standard);
+  border-color: var(--clr-primary-background);
+  margin: 0;
+  background-color: var(--clr-primary);
+  /*Alignment of items and flexbox around them*/
   position: sticky;
   display: flex;
   flex-direction: column;
-  left: 1rem;
-  margin-left: 0;
-  align-items: stretch;
+  align-items: center;
   height: fit-content;
-  max-width: fit-content;
-  max-height: fit-content;
+  width: fit-content;
+  max-height: 2000px;
+  max-width: 2000px;
   overflow: hidden;
-  justify-content: start;
-  transition: max-height 0.3s ease-in-out, max-width 0.3s ease-in-out;
+  transition:
+    max-height 0.3s ease-in-out,
+    max-width 0.3s ease-in-out,
+    border 0.3s ease-out,
+    border-color 0.3s ease-out ;
+}
+.mainNav .link {
+  border-radius: 0;
+  height: 39;
+  width: 39;
+  padding: 1rem;
 }
 
 @media screen and (max-width: 700px) {
   .mainNav {
-    bottom: 1rem;
     flex-direction: row;
+    max-width: fit-content;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .mainNav {
+    border: solid 0.2rem;
+    border-color: var(--clr-primary-background);
+    left: calc(var(--nav-standard) - 0.2rem);
+    bottom: calc(var(--nav-standard) - 0.2rem);
   }
 }

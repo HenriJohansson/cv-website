@@ -31,12 +31,12 @@ This section handles the popup
 }
 
 .popup {
+  background-color: var(--clr-primary-background);
   position: relative;
   display: flex;
   margin: 100px auto;
   padding: 1rem;
   padding-bottom: 3rem;
-  background: #fff;
   border-radius: 5px;
   width: fit-content;
   height: 80vh;
@@ -58,14 +58,10 @@ This section handles the popup
   text-decoration: none;
   color: var(--clr-primary-dark);
 }
-.popup .close:hover {
-  color: var(--clr-primary);
-}
 
-@media (prefers-color-scheme: dark) {.popup .close:hover
-  .popup * {
-    background-color: gray;
-  }
+/*Cv embedded iframe background color cannot be changed*/
+#Cv .popup {
+  background-color: #fff;
 }
 
 @media screen and (max-width: 1000px){

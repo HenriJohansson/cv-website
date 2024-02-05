@@ -3,16 +3,17 @@ import ActionLink from '@components/Links/ActionLink'
 import { Menu } from '@components/Icons/Menu';
 import { addNewId } from '@functions/idGenerator';
 import { useEffect, useRef, useState } from 'react';
-import { useWindowDimensions } from '@components/util/Window'
+import { useWindowDimensions } from '@components/util/WindowDimensions'
 
 const NavBar = () => {
+  const [show, setShow] = useState(false)
 
-  const maxSize: number = 60 //56 or 57 is exact
+  const maxSize: number = 100 //56 or 57 is exact
   const links: number = 2;
   const window = useWindowDimensions();
   const [navHeight, setNavHeight] = useState(maxSize);
   const [navWidth, setNavWidth] = useState(maxSize);
-  const [show, setShow] = useState(false)
+
   const hasPageBeenRendered = useRef(false)
 
   const calculateOpeningMenu = () => {
@@ -37,16 +38,17 @@ const NavBar = () => {
     // eslint-disable-next-line
   }, [window.width, show]) //React to window change and calculate new size
 
-
-  addNewId("link") //adds new id called link in id generator
+  addNewId("link"); //adds new id called link in id generator
   /* */
   return (
-    <nav className="mainNav" style={{maxHeight: navHeight + "px", maxWidth: navWidth + "px"}} >
-      <ActionLink onClick={() => {setShow(!show);}} abbreviationOrIcon={Menu}></ActionLink>
-      {show ?
-      <HyperLink abbreviationOrIcon="CV" href="#Cv"></HyperLink>
-      : null}
-    </nav>
+    <div className='mainNavMover'>
+      <nav className="mainNav" style={{maxHeight: navHeight + "px", maxWidth: navWidth + "px"}} >
+        <ActionLink onClick={() => {setShow(!show);}} abbreviationOrIcon={Menu}></ActionLink>
+        {show ?
+        <HyperLink abbreviationOrIcon="CV" href="#Cv"></HyperLink>
+        : null}
+      </nav>
+    </div>
   )
 }
 

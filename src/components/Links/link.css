@@ -1,18 +1,22 @@
 .link {
   padding: 10px;
+  border-radius: 1rem;
   border: 0px;
   color: var(--clr-primary-dark);
-  border-color: var(--clr-primary);
   background-color: var(--clr-primary);
-  border-width: 20px;
   text-decoration: none;
   height: fit-content;
+  line-height: 1;
   transition: background-color 0.5s ease-out;
+
+  /* Font */
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Viga';
 }
+
 
 .link:hover {
-  background-color: var(--clr-primary-white);
+  background-color: var(--clr-primary-background);
   scale: 1.1;
 }
-
-
