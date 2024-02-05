@@ -1,0 +1,15 @@
+:root {
+  --clr-primary: #548ab7;
+  --clr-primary-dark: #001D4A;
+  --clr-primary-white: #ffffff;
+  --clr-primary-cream: #EAF8BF;
+  --clr-primary-gold: #ECA400;
+  --clr-primary-brown: #C19875;
+
+  --clr-invisible: 	rgba(84, 138, 183, 0);
+  --clr-invisible-dark: rgba(0, 29, 74, 0);
+  --clr-invisible-white: rgba(255, 255, 255, 0);
+  --clr-invisible-cream: rgba(234, 248, 191, 0);
+  --clr-invisible-gold:	rgba(236, 164, 0, 0);
+  --clr-invisible-brown: rgba(193, 152, 117, 0);
+}

@@ -1,0 +1,18 @@
+.link {
+  padding: 10px;
+  border: 0px;
+  color: var(--clr-primary-dark);
+  border-color: var(--clr-primary);
+  background-color: var(--clr-primary);
+  border-width: 20px;
+  text-decoration: none;
+  height: fit-content;
+  transition: background-color 0.5s ease-out;
+}
+
+.link:hover {
+  background-color: var(--clr-primary-white);
+  scale: 1.1;
+}
+
+

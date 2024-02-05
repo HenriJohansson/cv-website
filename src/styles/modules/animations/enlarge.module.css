@@ -1,0 +1,22 @@
+/* Access from outside set to element
+<div animation-width-start: 2rem >
+*/
+.onEnlarge {
+  animation-name: onMountFrame;
+  animation-duration: 200ms;
+  animation-timing-function: linear;
+  --animation-width-start: 0;
+  --animation-height-start: 0;
+  --animation-width-end: 400px;
+  --animation-height-end: 100vh;
+}
+@keyframes onMountFrame {
+  from {
+    width: var(--animation-width-start);
+    height: var(--animation-height-start);
+  }
+  to {
+    width: var(--animation-width-end);
+    height: var(--animation-height-end);
+  }
+}

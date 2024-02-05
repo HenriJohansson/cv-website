@@ -3,8 +3,11 @@
     "target": "ES2020",
     "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "plugins": [{ "name": "typescript-plugin-css-modules" }],
     "module": "ESNext",
     "skipLibCheck": true,
+    "types": ["vitest/globals"],
+    "allowJs": false,
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -20,11 +23,17 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
 
-    /* Path */
+    /* Paths to avoid ts errors, real paths are set by vite.config.ts */
     "paths": {
-      "@/*": ["./src/*"],
+      "@*": ["./src/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@styles/*": ["./src/styles/*"],
+      "@functions/*": ["./src/functions/*"],
+      "@components/*": ["./src/components/*"],
+      "@tests/*": ["./tests/*"],
+      "@store/*": ["./store/*"],
     }
   },
-  "include": ["src"],
+  "include": ["src", "tests/**/*.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
