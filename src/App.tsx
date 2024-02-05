@@ -7,7 +7,6 @@ import PageInnitialLoad from '@components/PageInnitialLoad/PageInnitialLoad';
 import { ThemeProvider } from '@emotion/react';
 import theme from '@styles/muiColors';
 
-
 function App() {
   return (
     <ThemeProvider theme={theme}>

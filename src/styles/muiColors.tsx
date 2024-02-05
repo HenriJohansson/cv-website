@@ -19,6 +19,10 @@ const theme = createTheme({
       // dark: will be calculated from palette.secondary.main,
       contrastText: '#47008F',
     },
+    text: {
+      primary: myDocument
+      .getPropertyValue('--clr-primary-text'),
+    }
   },
 });
 export default theme;

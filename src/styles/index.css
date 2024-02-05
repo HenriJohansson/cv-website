@@ -2,11 +2,12 @@
 @import '@components/util/Popup/popup.css';
 @import "@components/Links/link.css";
 @import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Viga&display=swap');
 @import '@components/Nav/nav.css';
 @import '@pages/Cv/Cv.css';
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif, 'Rye', serif;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif, 'Rye', serif, 'Viga', sans-serif;
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
@@ -19,33 +20,18 @@
 * {
   min-width: 0;
 }
+body {
+  min-width:300px;        /* Suppose you want minimum width of 1000px */
+  width: auto !important;  /* Firefox will set width as auto */
+  width:300px;            /* As IE6 ignores !important it will set width as 1000px; */
+}
 
 a {
   font-weight: 500;
-  color: var(--clr-primary);
   text-decoration: inherit;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    color: #ffffff;
-    background-color: black
-  }
-  button {
-    background-color: var(--clr-primary-brown);
-  }
 }

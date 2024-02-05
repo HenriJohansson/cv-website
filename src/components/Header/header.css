@@ -1,5 +1,4 @@
 @import url(/src/styles/colors.css);
-@import url(/src/styles/colors.css);
 header {
   background-color: var(--clr-primary);
   --width: 100% ;
@@ -28,11 +27,6 @@ header p {
   header * {
     margin-bottom: 1rem;
     padding-bottom: calc(15rem / 2);
-  }
-}
-@media (prefers-color-scheme: dark) {
-  header {
-    background-color: var(--clr-primary-dark);
   }
 }
 @media screen and (max-width: 1000px) {

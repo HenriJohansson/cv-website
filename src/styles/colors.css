@@ -1,10 +1,35 @@
 :root {
+  /* Color Primary */
   --clr-primary: #548ab7;
+  --clr-primary-30: #3b6180;
+  --clr-primary-80: #111c25;
+
   --clr-primary-dark: #001D4A;
+  --clr-primary-dark-30: #001434;
+  --clr-primary-80: #111c25;
+
   --clr-primary-white: #ffffff;
-  --clr-primary-cream: #EAF8BF;
-  --clr-primary-gold: #ECA400;
-  --clr-primary-brown: #C19875;
+
+  /* Color Secondary */
+  --clr-secondary: #b7548a;
+  --clr-secondary-1: ;
+  --clr-secondary-2: ;
+  --clr-secondary-3: ;
+  --clr-secondary-4: ;
+  --clr-secondary-5: ;
+  --clr-secondary-6: ;
+  --clr-secondary-7: ;
+
+  /* Color Tertiary */
+  --clr-tertiary: #8AB754;
+  --clr-tertiary-1: ;
+  --clr-tertiary-2: ;
+  --clr-tertiary-3: ;
+  --clr-tertiary-4: ;
+  --clr-tertiary-5: ;
+  --clr-tertiary-6: ;
+  --clr-tertiary-7: ;
+
 
   --clr-invisible: 	rgba(84, 138, 183, 0);
   --clr-invisible-dark: rgba(0, 29, 74, 0);
@@ -12,4 +37,24 @@
   --clr-invisible-cream: rgba(234, 248, 191, 0);
   --clr-invisible-gold:	rgba(236, 164, 0, 0);
   --clr-invisible-brown: rgba(193, 152, 117, 0);
+
+
+  --clr-primary-background: var(--clr-primary-white);
+  --clr-primary-text: #0D162B;
+  color: var(--clr-primary-text);
+  background-color: var(--clr-primary-white);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --clr-primary: #001D4A;
+    --clr-primary-30: #001434;
+    --clr-primary-50: #000f25;
+    --clr-primary-dark: #548ab7;
+    --clr-primary-dark-30: #3b6180;
+    --clr-primary-white: #808ea5;
+    --clr-primary-background: var(--clr-primary-50);
+    --clr-primary-text: #4382BD;
+    color: var(--clr-primary-text);
+    background-color: var(--clr-primary-background)
+  }
 }

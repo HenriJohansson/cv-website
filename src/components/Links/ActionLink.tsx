@@ -1,4 +1,4 @@
-import styles from "@styles/modules/icons.module.css"
+
 import { getNewId } from "@functions/idGenerator";
 import { MouseEventHandler } from "react";
 
@@ -12,7 +12,7 @@ const ActionLink = (props: Props) => {
   const setReturnJSX = (): JSX.Element => {
     if(typeof props.abbreviationOrIcon == "string"){
       returnValue = (
-      <abbr className={styles.link}>
+      <abbr className="link">
         {props.abbreviationOrIcon}
       </abbr>
       );
@@ -29,7 +29,7 @@ const ActionLink = (props: Props) => {
   return (
     <>
       <button id={getNewId("link")} onClick={props.onClick} className="link" >
-      {setReturnJSX()}
+        {setReturnJSX()}
       </button>
     </>
   )

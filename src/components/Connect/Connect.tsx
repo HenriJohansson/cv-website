@@ -1,6 +1,7 @@
 
-export const Connect = () => {
+const Connect = () => {
   return (
     <div>Connect</div>
   )
 }
+export default Connect;
