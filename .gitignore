@@ -15,6 +15,7 @@ dist-ssr
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
+.editorconfig
 .idea
 .DS_Store
 *.suo
@@ -25,3 +26,7 @@ dist-ssr
 .editorconfig
 # Enviroment Variables
 .env.*
+
+#Personal helper and example files
+example_*.tsx
+example_*.ts
