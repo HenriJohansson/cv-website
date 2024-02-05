@@ -1,0 +1,52 @@
+@import url(/src/styles/colors.css);
+@import url(/src/styles/colors.css);
+header {
+  background-color: var(--clr-primary);
+  --width: 100% ;
+  --offset: calc(var(--width) / 3);
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  top: 0;
+  left: var(--offset);
+  padding-top: 100px;
+  width: var(--width);
+  transition: left 1s ease-out;
+  border-radius: 0 0 0 1rem;
+  height: 15rem;
+}
+header p {
+  margin-left: calc(var(--offset) / 3);
+  height: fit-content;
+}
+@media screen and (min-width: 1001px) {
+  header h1 {
+    transition: text-align 1s ease-in;
+    text-align:start;
+  }
+  header * {
+    margin-bottom: 1rem;
+    padding-bottom: calc(15rem / 2);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  header {
+    background-color: var(--clr-primary-dark);
+  }
+}
+@media screen and (max-width: 1000px) {
+  header {
+    border-radius: 0;
+    flex-direction: column;
+    align-items: center;
+    transition: border-radius 1s ease-out, left 0.3s ease;
+    left: 0;
+  }
+  header p {
+    margin-left: 0;
+  }
+  header h1 {
+    margin-top: 0;
+  }
+}

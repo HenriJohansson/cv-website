@@ -1,0 +1,49 @@
+.content {
+  text-align: center;
+  height: 100%;
+  width: 1000px;
+  z-index: 10;
+}
+.content .link {
+  margin-right: 1rem;
+  background-color: transparent;
+  padding-top: 0rem;
+}
+/*.content*/
+.content .actions {
+  display: flex;
+  /*background: linear-gradient(270deg, var(--clr-invisible-white) 0%, var(--clr-invisible-white) 0%, var(--clr-primary) 100%);*/
+  border-radius: 0.3rem;
+  justify-content: flex-end;
+  position: absolute;
+  right: 3rem;
+  min-height: 0;
+  height: 1rem;
+  line-height:0;
+  padding-bottom: 1rem;
+}
+.content .link:hover {
+  animation: ease-in-out bounce 1s infinite;
+}
+@keyframes bounce {
+  from {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .content .actions {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .popup .content{
+    width: 100%;
+    margin: 0;
+  }
+}
