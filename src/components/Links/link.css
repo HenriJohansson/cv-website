@@ -1,9 +1,5 @@
 .link {
-  padding: 10px;
-  border-radius: 1rem;
-  border: 0px;
   color: var(--clr-primary-dark);
-  background-color: var(--clr-primary);
   text-decoration: none;
   height: fit-content;
   line-height: 1;
