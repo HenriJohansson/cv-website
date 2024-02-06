@@ -15,8 +15,12 @@
   font-family: 'Viga';
 }
 
+@media (hover: hover) {
+  .link:hover {
+    background-color: var(--clr-primary-background);
+    scale: 1.1;
+  }
+}
+@media (hover: none) {
 
-.link:hover {
-  background-color: var(--clr-primary-background);
-  scale: 1.1;
 }

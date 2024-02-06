@@ -3,7 +3,7 @@
 @import "@components/Links/link.css";
 @import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Viga&display=swap');
-@import '@components/Nav/nav.css';
+@import '@components/navigation/Nav/nav.css';
 @import '@pages/Cv/Cv.css';
 
 :root {
@@ -16,14 +16,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
+  background-color: var(--clr-primary-background);
 }
 * {
   min-width: 0;
 }
 body {
   min-width:300px;        /* Suppose you want minimum width of 1000px */
-  width: auto !important;  /* Firefox will set width as auto */
   width:300px;            /* As IE6 ignores !important it will set width as 1000px; */
+
 }
 
 a {

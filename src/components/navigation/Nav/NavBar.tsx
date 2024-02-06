@@ -22,9 +22,9 @@ const NavBar = () => {
       setNavWidth(maxSize);
       return;
     }
-    if(window.width >= 700){
+    if(window.width >= 770){
       setNavHeight(maxSize*links)
-    setNavWidth(maxSize)
+      setNavWidth(maxSize)
     } else {
       setNavHeight(maxSize)
       setNavWidth(maxSize*links)
@@ -41,14 +41,12 @@ const NavBar = () => {
   addNewId("link"); //adds new id called link in id generator
   /* */
   return (
-    <div className='mainNavMover'>
       <nav className="mainNav" style={{maxHeight: navHeight + "px", maxWidth: navWidth + "px"}} >
         <ActionLink onClick={() => {setShow(!show);}} abbreviationOrIcon={Menu}></ActionLink>
         {show ?
         <HyperLink abbreviationOrIcon="CV" href="#Cv"></HyperLink>
         : null}
       </nav>
-    </div>
   )
 }
 

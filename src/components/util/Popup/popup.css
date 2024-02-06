@@ -8,7 +8,7 @@ This section handles the popup
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: var(--clr-dark-70);
   transition: all 200ms ease-in-out;
   visibility: hidden;
   opacity: 0;
@@ -41,6 +41,7 @@ This section handles the popup
   width: fit-content;
   height: 80vh;
   transition: all 0.2s ease-in-out;
+  overflow-x: hidden;
 }
 
 .popup h2 {
