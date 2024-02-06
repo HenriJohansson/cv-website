@@ -9,16 +9,17 @@
   --clr-primary-80: #111c25;
 
   --clr-primary-white: #ffffff;
-
+  --clr-primary-black: #000000;
   /* Color Secondary */
   --clr-secondary: #b7548a;
-  --clr-secondary-1: ;
   --clr-secondary-2: ;
   --clr-secondary-3: ;
   --clr-secondary-4: ;
   --clr-secondary-5: ;
   --clr-secondary-6: ;
   --clr-secondary-7: ;
+  --clr-secondary-dark: #4a001d;
+
 
   /* Color Tertiary */
   --clr-tertiary: #8AB754;
@@ -29,6 +30,7 @@
   --clr-tertiary-5: ;
   --clr-tertiary-6: ;
   --clr-tertiary-7: ;
+  --clr-tertiary-dark: #1d4a00;
 
 
   --clr-dark: rgba(0, 0, 0, 1);
@@ -53,14 +55,25 @@
 }
 @media (prefers-color-scheme: dark) {
   :root {
+    /* Changes to Colors in DarkMode */
     --clr-primary: #001D4A;
     --clr-primary-30: #001434;
     --clr-primary-50: #000f25;
     --clr-primary-dark: #548ab7;
     --clr-primary-dark-30: #3b6180;
-    --clr-primary-white: #808ea5;
+    --clr-primary-white: #000000;
+    --clr-primary-black: #ffffff;
     --clr-primary-background: var(--clr-primary-50);
     --clr-primary-text: #4382BD;
+
+    /* Changes To Secondary Colors */
+    --clr-secondary: #4a001d;
+    --clr-secondary-dark: #b7548a;
+
+    /* Changes To Tertiary Colors */
+    --clr-tertiary: #1d4a00;
+    --clr-tertiary-dark: #8AB754;
+
     color: var(--clr-primary-text);
     background-color: var(--clr-primary-background)
   }
