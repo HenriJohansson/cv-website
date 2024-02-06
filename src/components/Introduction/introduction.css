@@ -1,0 +1,27 @@
+#introduction {
+  position: absolute;
+  background-color: var(--clr-tertiary);
+  padding: calc(var(--section-h)/ 4) 0 calc(var(--section-h)/ 4) 0;
+  height: calc(var(--section-h)/ 2);
+  border-radius: 0 1rem 1rem 0;
+  margin-left: 0;
+  transition: left 1s ease-in, right 1s ease-in;
+}
+#introduction_divider {
+  border-color: var(--clr-secondary);
+}
+@media screen and (max-width: 1000px) {
+  #introduction {
+    border-radius: 0;
+    transition: border-radius 1s ease-out, left 0.3s ease, right 0.3s ease;
+    left: 0;
+    margin-left: 0;
+    margin-right: 0;
+    right: 0;
+  }
+}
+@media screen and (min-width: 1001px) {
+  #introduction {
+    transition: text-align 1s ease-in;
+  }
+}
