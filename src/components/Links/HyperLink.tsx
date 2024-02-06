@@ -26,7 +26,7 @@ const HyperLink = (props: Props) => {
 
   return (
     <>
-      <a id={getNewId("link")} href={props.href} className="link" >
+      <a id={getNewId("link")} href={props.href} className="link">
         {setReturnJSX()}
       </a>
     </>
