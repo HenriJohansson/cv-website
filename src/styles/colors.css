@@ -66,7 +66,7 @@
     --clr-primary-dark: #548ab7;
     --clr-primary-dark-30: #3b6180;
     --clr-primary-white: #000000;
-    --clr-primary-black: #ffffff;
+    --clr-primary-black: hsl(207, 41%, 95%);
     --clr-primary-background: var(--clr-primary-50);
     --clr-primary-text: #4382BD;
 
@@ -78,7 +78,7 @@
     --clr-tertiary: #1d4a00;
     --clr-tertiary-dark: #8AB754;
 
-    color: var(--clr-primary-text);
+    color: var(--clr-primary-black);
     background-color: var(--clr-primary-background)
   }
 }

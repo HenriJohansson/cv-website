@@ -18,7 +18,12 @@ connect
   background-color: transparent;
 }
 .connectLinks .link .icon:hover {
-  color: var(--clr-primary-background)
+  color: var(--clr-primary-white)
+}
+@media (prefers-color-scheme: dark) {
+  .connectLinks .link .icon:hover {
+    color: var(--clr-primary-black)
+  }
 }
 .connectLinks {
   display: flex;
