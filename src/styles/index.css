@@ -16,12 +16,35 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
-  background-color: var(--clr-primary-background);
+
 }
 
 #root {
   padding: 0;
   border-radius: 1rem;
+}
+.bgPattern {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: 20px 20px;
+  background: repeating-linear-gradient(
+    -55deg,
+  var(--clr-primary-background), var(--clr-primary-background) 12rem,
+  var(--clr-primary-o30) 12rem,
+  var(--clr-primary-o30) 24rem
+  );
+  z-index: -10;
+}
+@media (prefers-color-scheme: dark) {
+  .bgPattern {
+    background: repeating-linear-gradient(
+    -55deg,
+    var(--clr-primary-background), var(--clr-primary-background) 12rem,
+    var(--clr-primary-o20) 12rem,
+    var(--clr-primary-o20) 24rem
+  );
+  }
 }
 
 * {
