@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import LinearProgress from '@mui/material/LinearProgress';
 import HyperLink from '@components/Links/HyperLink';
-import { X } from '@components/Icons/X';
 import { Download } from '@components/Icons/Download';
 import { useWindowDimensions } from '@components/util/WindowDimensions';
+import { X } from '@components/Icons/X';
 
 
 function Cv() {
@@ -15,7 +15,7 @@ function Cv() {
 
   const windowDims = useWindowDimensions()
 
-  const width: string = windowDims.width + "px"
+  const width: string = windowDims.width - (16*4) + "px"
   const styleiFrame = {
     display: "block",
     height: "100%",

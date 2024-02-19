@@ -33,7 +33,6 @@ This section handles the popup
 .popup {
   background-color: var(--clr-primary-background);
   position: relative;
-  display: flex;
   margin: 100px auto;
   padding: 1rem;
   padding-bottom: 3rem;
@@ -48,16 +47,6 @@ This section handles the popup
   margin-top: 0;
   color: var(--clr-primary-dark);
   font-family: Tahoma, Arial, sans-serif;
-}
-.popup #close {
-  top: 0px;
-  display: block;
-  text-align: right;
-  transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: var(--clr-primary-dark);
 }
 
 /*Cv embedded iframe background color cannot be changed*/

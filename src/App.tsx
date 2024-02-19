@@ -21,7 +21,7 @@ function App() {
 
       {/* Absolute elements defined on the bottom */}
       <NavBarManager></NavBarManager>
-      <Popup id='Cv' enableClose={false} content={Cv} />
+      <Popup id='Cv' content={Cv} />
     </ThemeProvider>
   )
 }
