@@ -7,14 +7,12 @@
   width: 100%;
   transition: padding 0.5s ease-out;
 }
+connect
 .connect p {
   margin-top: 0;
 }
 .connectLinks .link {
-  max-height: 20px;
-  max-width: 20px;
   margin: 0 1rem 0 1rem;
-  border-radius: 100%;
 }
 .connectLinks .link:hover {
   background-color: transparent;
@@ -22,7 +20,7 @@
 .connectLinks .link .icon:hover {
   color: var(--clr-primary-background)
 }
-.connectLinks{
+.connectLinks {
   display: flex;
   justify-content: center;
 }
