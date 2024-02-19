@@ -1,17 +1,15 @@
-import "@components/Header/header.css"
-import "@components/Introduction/introduction.css"
+
+import "@components/Introduction/introduction.css";
+import { useFetchText } from "@/hooks/TextFetch";
 
 export const Introduction = () => {
+  const text = useFetchText("introduction.txt")
   return (
     <>
       <section>
         <div id="introduction">
           <p>
-          I am a tech enthusiast
-          diving deep into the world of software development.
-          Currently studying Computer Science, I'm all about coding and creating cool stuff.
-          From back-end to front-end and everything in between,
-          I'm up for the challenge.
+          {text}
           </p>
         </div>
       </section>
