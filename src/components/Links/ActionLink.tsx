@@ -4,7 +4,8 @@ import { MouseEventHandler } from "react";
 
 type Props = {
   onClick: MouseEventHandler<HTMLButtonElement>,
-  abbreviationOrIcon: string | {(): JSX.Element}
+  abbreviationOrIcon: string | {(): JSX.Element},
+  id?: string,
 }
 const ActionLink = (props: Props) => {
 
@@ -28,7 +29,7 @@ const ActionLink = (props: Props) => {
 
   return (
     <>
-      <button id={getNewId("link")} onClick={props.onClick} className="link" >
+      <button id={props.id ? props.id : getNewId("link")} onClick={props.onClick} className="link" >
         {setReturnJSX()}
       </button>
     </>

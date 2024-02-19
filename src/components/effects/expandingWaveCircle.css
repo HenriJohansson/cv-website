@@ -1,0 +1,48 @@
+:root {
+  --menu-button-effect-w: 67.64px;
+  --menu-button-effect-h: 62px;
+}
+.effect {
+  position: absolute;
+  background-color: transparent;
+  border: solid;
+  border-radius: 1rem;
+  opacity: 0;
+  border-color: var(--clr-primary-30);
+  left: calc((var(--menu-button-effect-w) -10rem) * -1);
+  top: calc((var(--menu-button-effect-h) - 3.7rem) * -1);
+  width: var(--menu-button-effect-w);
+  height: var(--menu-button-effect-h);
+  z-index: -100;
+  animation: dribble infinite 3s ease;
+  animation-delay: 4s;
+}
+
+@media screen and (max-width: 1000px) {
+  .effect {
+  border-color: var(--clr-primary-background);
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .effect {
+    left: calc((var(--menu-button-effect-w) - 4.08rem) * -1);
+    top: calc((var(--menu-button-effect-h) - 3.7rem) * -1);
+  }
+}
+@keyframes dribble {
+  0% {
+    opacity: 1;
+    transform: transform(1);
+    border-radius: 1rem;
+  }
+
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+    border-radius: 100%;
+  }
+}

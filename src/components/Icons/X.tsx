@@ -1,10 +1,8 @@
 import { Close } from "@mui/icons-material";
 
-export const X = (props: {className: string, href: string}) => {
+export const X = () => {
   return (
-    <a className={props.className} href={props.href}>
-      <Close color="secondary" fontSize="medium" />
-    </a>
+    <Close color="secondary" fontSize="medium" />
   );
 };
 /*

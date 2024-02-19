@@ -1,0 +1,31 @@
+.connect {
+  position: fixed;
+  bottom: 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: var(--clr-dark-30);
+  width: 100%;
+  transition: padding 0.5s ease-out;
+}
+connect
+.connect p {
+  margin-top: 0;
+}
+.connectLinks .link {
+  margin: 0 1rem 0 1rem;
+}
+.connectLinks .link:hover {
+  background-color: transparent;
+}
+.connectLinks .link .icon:hover {
+  color: var(--clr-primary-white)
+}
+@media (prefers-color-scheme: dark) {
+  .connectLinks .link .icon:hover {
+    color: var(--clr-primary-black)
+  }
+}
+.connectLinks {
+  display: flex;
+  justify-content: center;
+}

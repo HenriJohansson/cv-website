@@ -15,7 +15,6 @@
   /*background: linear-gradient(270deg, var(--clr-invisible-white) 0%, var(--clr-invisible-white) 0%, var(--clr-primary) 100%);*/
   border-radius: 0.3rem;
   justify-content: flex-end;
-  position: absolute;
   right: 3rem;
   min-height: 0;
   height: 1rem;

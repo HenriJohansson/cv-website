@@ -1,6 +1,10 @@
 :root {
   /* Color Primary */
   --clr-primary: #548ab7;
+  --clr-primary-o80: rgba(84, 138, 183, 0.8);
+  --clr-primary-o50: rgba(84, 138, 183, 0.5);
+  --clr-primary-o30: rgba(84, 138, 183, 0.3);
+  --clr-primary-o20: rgba(84, 138, 183, 0.2);
   --clr-primary-30: #3b6180;
   --clr-primary-80: #111c25;
 
@@ -8,17 +12,18 @@
   --clr-primary-dark-30: #001434;
   --clr-primary-80: #111c25;
 
-  --clr-primary-white: #ffffff;
-
+  --clr-primary-white: hsl(207, 41%, 95%);
+  --clr-primary-black: #000000;
   /* Color Secondary */
   --clr-secondary: #b7548a;
-  --clr-secondary-1: ;
-  --clr-secondary-2: ;
-  --clr-secondary-3: ;
-  --clr-secondary-4: ;
-  --clr-secondary-5: ;
+  --clr-secondary-o80: rgba(183, 84, 138, 0.8);
+  --clr-secondary-o50: rgba(183, 84, 138, 0.5);
+  --clr-secondary-o30: rgba(183, 84, 138, 0.3);
+  --clr-secondary-o20: rgba(183, 84, 138, 0.2);
   --clr-secondary-6: ;
   --clr-secondary-7: ;
+  --clr-secondary-dark: #4a001d;
+
 
   /* Color Tertiary */
   --clr-tertiary: #8AB754;
@@ -29,6 +34,7 @@
   --clr-tertiary-5: ;
   --clr-tertiary-6: ;
   --clr-tertiary-7: ;
+  --clr-tertiary-dark: #1d4a00;
 
 
   --clr-dark: rgba(0, 0, 0, 1);
@@ -53,15 +59,26 @@
 }
 @media (prefers-color-scheme: dark) {
   :root {
+    /* Changes to Colors in DarkMode */
     --clr-primary: #001D4A;
     --clr-primary-30: #001434;
     --clr-primary-50: #000f25;
     --clr-primary-dark: #548ab7;
     --clr-primary-dark-30: #3b6180;
-    --clr-primary-white: #808ea5;
+    --clr-primary-white: #000000;
+    --clr-primary-black: hsl(207, 41%, 95%);
     --clr-primary-background: var(--clr-primary-50);
     --clr-primary-text: #4382BD;
-    color: var(--clr-primary-text);
+
+    /* Changes To Secondary Colors */
+    --clr-secondary: #4a001d;
+    --clr-secondary-dark: #b7548a;
+
+    /* Changes To Tertiary Colors */
+    --clr-tertiary: #1d4a00;
+    --clr-tertiary-dark: #8AB754;
+
+    color: var(--clr-primary-black);
     background-color: var(--clr-primary-background)
   }
 }

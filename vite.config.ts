@@ -27,6 +27,7 @@ export default defineConfig(({ command, mode, isSsrBuild, isPreview }: ConfigEnv
         '@functions': fileURLToPath(new URL('./src/functions', import.meta.url)),
         '@components': fileURLToPath(new URL('./src/components', import.meta.url)),
         '@store': fileURLToPath(new URL('./src/store', import.meta.url)),
+        '@hooks': fileURLToPath(new URL('./src/hooks', import.meta.url)),
       },
     }
   }
