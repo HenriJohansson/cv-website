@@ -1,8 +1,10 @@
 import { getNewId } from "@functions/idGenerator";
+import { MouseEventHandler } from "react";
 
 type Props = {
   href: string,
   abbreviationOrIcon: string | {(): JSX.Element},
+  onMouseEnter?: MouseEventHandler<HTMLAnchorElement>,
   id?: string,
   children?: React.ReactNode;
 }
@@ -16,14 +18,12 @@ const HyperLink = (props: Props) => {
       <abbr className=".link">
         {props.abbreviationOrIcon}
       </abbr>
-      {props.children}
       </>
       );
     } else {
       returnValue = (
       <>
         <props.abbreviationOrIcon></props.abbreviationOrIcon>
-        {props.children}
       </>
       );
     }
@@ -32,9 +32,10 @@ const HyperLink = (props: Props) => {
 
   return (
     <>
-      <a id={props.id ? props.id : getNewId("link")} href={props.href} className="link">
+      <a id={props.id ? props.id : getNewId("link")} href={props.href} className="link" onMouseEnter={props.onMouseEnter}>
         {setReturnJSX()}
       </a>
+      {props.children}
     </>
   )
 }
