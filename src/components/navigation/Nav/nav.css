@@ -46,7 +46,6 @@ nav {
   width: fit-content;
   max-height: 2000px;
   max-width: 2000px;
-  overflow: hidden;
   transition:
     max-height 0.3s ease-in-out,
     max-width 0.3s ease-in-out,
@@ -54,9 +53,18 @@ nav {
     left 0.3s ease-in-out;
 
 }
+
 .mainNav .link {
   border-radius: 0;
   padding: 1rem;
+}
+
+.mainNav .link:first-child {
+  border-radius: 1rem 0 0 1rem ;
+}
+
+.mainNav #justCv {
+  border-radius: 1rem;
 }
 
 @media screen and (max-width: 400px) {
