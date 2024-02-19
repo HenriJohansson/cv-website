@@ -2,6 +2,6 @@ import { FileDownload } from "@mui/icons-material"
 
 export const Download = () => {
   return (
-    <FileDownload fontSize="medium" color="secondary"/>
+    <FileDownload className="icon" fontSize="medium" color="secondary"/>
   )
 }
