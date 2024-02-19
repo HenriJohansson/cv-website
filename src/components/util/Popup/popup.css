@@ -49,7 +49,7 @@ This section handles the popup
   color: var(--clr-primary-dark);
   font-family: Tahoma, Arial, sans-serif;
 }
-.popup .close {
+.popup #close {
   top: 0px;
   display: block;
   text-align: right;
