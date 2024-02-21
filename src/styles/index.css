@@ -24,9 +24,10 @@
   border-radius: 1rem;
 }
 .bgPattern {
-  position: absolute;
+  position: fixed;
+  overflow: hidden;
+  height: 100%;
   width: 100%;
-  height: var(--page-height);
   background-size: 20px 20px;
   background: repeating-linear-gradient(
     -55deg,
@@ -34,6 +35,7 @@
   var(--clr-primary-o30) 12rem,
   var(--clr-primary-o30) 24rem
   );
+  background-attachment: fixed;
   z-index: -10;
 }
 @media (prefers-color-scheme: dark) {
