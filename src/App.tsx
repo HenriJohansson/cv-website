@@ -1,5 +1,4 @@
 import { Header } from '@components/Header/header'
-import '@/styles/app.css'
 import { ThemeProvider } from '@emotion/react';
 import theme from '@styles/muiColors';
 
