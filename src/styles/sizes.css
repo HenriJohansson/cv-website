@@ -1,5 +1,4 @@
 :root {
-  --page-height: 1200px;
   --section-h: 20rem;
   --section-w: 100%;
   --section-offset: calc(var(--section-w) / 3);

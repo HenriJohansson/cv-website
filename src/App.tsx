@@ -1,5 +1,4 @@
 import { Header } from '@components/Header/header'
-import '@/styles/app.css'
 import { ThemeProvider } from '@emotion/react';
 import theme from '@styles/muiColors';
 
@@ -18,6 +17,7 @@ function App() {
       <Header></Header>
       <Introduction></Introduction>
       <Connect></Connect>
+      <div className='emptySpace' style={{ height: "400px", background: "transparent"}}></div>
 
       {/* Absolute elements defined on the bottom */}
       <NavBarManager></NavBarManager>

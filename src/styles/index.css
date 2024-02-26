@@ -1,5 +1,6 @@
 @import 'colors.css';
 @import 'sizes.css';
+@import 'scrollbar.css';
 @import '@components/util/Popup/popup.css';
 @import "@components/Links/link.css";
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Viga&display=swap');
@@ -16,12 +17,14 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
-  height: var(--page-height);
+  height: fit-content;
 }
 
 #root {
   padding: 0;
   border-radius: 1rem;
+  margin: 0 auto;
+  text-align: center;
 }
 .bgPattern {
   position: fixed;
