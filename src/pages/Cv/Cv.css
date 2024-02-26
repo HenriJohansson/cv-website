@@ -17,6 +17,7 @@
 .content #disclaimer {
   color: var(--clr-secondary);
   font-size: medium;
+  text-wrap: wrap;
 }
 /*.content*/
 .content .actions {
@@ -42,6 +43,12 @@
   }
   to {
     transform: translateY(-5px);
+  }
+}
+@media screen and (max-width: 400px) {
+  .content #disclaimer {
+    position:absolute;
+    left: 0.5rem;
   }
 }
 
