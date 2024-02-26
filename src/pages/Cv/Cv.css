@@ -44,6 +44,12 @@
     transform: translateY(-5px);
   }
 }
+@media screen and (max-width: 400px) {
+  .content #disclaimer {
+    position:absolute;
+    left: 0.5rem;
+  }
+}
 
 @media screen and (max-width: 1000px) {
   .content .actions {

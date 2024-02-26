@@ -11,23 +11,26 @@ function Cv() {
   const [source, setSource] = useState("https://docs.google.com/document/d/e/2PACX-1vSzSr4y3V7X7CZzLts4lhEUw0IN1baK4-uay6OdVYainASBQ7ccySqyVDOQjxAmBMAUUUnWxJ-Z4voa/pub?embedded=true");
   const [disclaimer, setDisclaimer] = useState("");
   const [downloadFull, setDownloadFull] = useState("");
+
+  const windowDims = useWindowDimensions()
+  const [width, setWidth] = useState(windowDims.width - (16*4) + "px")
   const loadingDone = () => {
     setLoading(false);
   }
   const googleDocsDownloadLink = "https://docs.google.com/document/d/1Wn6mfjrgqCSfnwH_H8T4rL0XjOp88_zVKDWiBHWsiFE/export?format=pdf";
 
-  const windowDims = useWindowDimensions()
 
-  const width: string = windowDims.width - (16*4) + "px"
   useEffect(() => {
     if(windowDims.width <= 570) {
       setSource("https://docs.google.com/document/d/e/2PACX-1vTk_Te-1oBj1r7qZu7GYV4MvtDnX6CWXpkwo4YEjboZb0t1lCFcWskgytlytIM1G3TVH4TVQ46IzAXl/pub?embedded=true");
       setDisclaimer("Mobile Version");
       setDownloadFull("Download normal layout ->");
+      setWidth(windowDims.width + "px")
     } else {
       setSource("https://docs.google.com/document/d/e/2PACX-1vSzSr4y3V7X7CZzLts4lhEUw0IN1baK4-uay6OdVYainASBQ7ccySqyVDOQjxAmBMAUUUnWxJ-Z4voa/pub?embedded=true");
       setDisclaimer("");
       setDownloadFull("");
+      setWidth(windowDims.width - (16*4) + "px")
     }
   },[windowDims.width])
 
