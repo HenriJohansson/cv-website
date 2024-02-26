@@ -9,6 +9,15 @@
   background-color: transparent;
   padding-top: 0rem;
 }
+.content p {
+  justify-self: center;
+  font-size: x-small;
+  margin-right: 1rem;
+}
+.content #disclaimer {
+  color: var(--clr-secondary);
+  font-size: medium;
+}
 /*.content*/
 .content .actions {
   display: flex;
