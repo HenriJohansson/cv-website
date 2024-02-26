@@ -17,7 +17,6 @@
 .content #disclaimer {
   color: var(--clr-secondary);
   font-size: medium;
-  text-wrap: wrap;
 }
 /*.content*/
 .content .actions {
