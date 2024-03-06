@@ -1,0 +1,12 @@
+{
+  "pictureUrlEndPoint": "https://ik.imagekit.io/henrijbusiness/Cv-Site/",
+  "projects": [
+    {
+      "name": "Python Backend for Wolt Internship Assignment",
+      "url": "https://github.com/HenriJohansson/Wolt_2024_Engineering_Internship_Assignment",
+      "picturePath":"WoltReindeer.png",
+      "alt": "Picture of Wolt Reindeers"
+    }
+  ]
+}
+
