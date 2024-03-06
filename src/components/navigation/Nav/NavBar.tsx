@@ -1,7 +1,6 @@
-import HyperLink from '@components/Links/HyperLink';
-import ActionLink from '@components/Links/ActionLink'
+import HyperLink from '@components/links/HyperLink';
+import ActionLink from '@components/links/ActionLink'
 import { Menu } from '@components/Icons/Menu';
-import { addNewId } from '@functions/idGenerator';
 import { useEffect, useRef, useState } from 'react';
 import { useWindowDimensions } from '@components/util/WindowDimensions'
 
@@ -38,8 +37,6 @@ const NavBar = () => {
     // eslint-disable-next-line
   }, [window.width, show]) //React to window change and calculate new size
 
-  addNewId("link"); //adds new id called link in id generator
-  /* */
   return (
       <nav className="mainNav" style={{maxHeight: navHeight + "px", maxWidth: navWidth + "px"}} >
         <ActionLink onClick={() => {setShow(!show);}} abbreviationOrIcon={Menu}></ActionLink>
