@@ -19,7 +19,7 @@
         "alt": "Picture of Preview of The First Game I created",
         "cropmode":"extract"
       },
-      "description": "A Game created in Unity back in first year using C#. The game includes systems like entity pooling and vector calculations"
+      "description": "My first Game created using Unity and C#. The game includes systems like entity pooling and vector calculations"
     }
   ]
 }
