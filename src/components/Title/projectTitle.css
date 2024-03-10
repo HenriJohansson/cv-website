@@ -1,0 +1,24 @@
+.titleCenterer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
+}
+
+.projectsTitle {
+  display: flex;
+  justify-content: center;
+  background-color: var(--clr-secondary);
+  width: 50%;
+  height: calc(var(--section-h) / 4);
+  border-radius: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .projectsTitle {
+    background-color: var(--clr-secondary);
+    width: 100%;
+    border-radius: 0;
+    transition: width 1s ease-out;
+  }
+}

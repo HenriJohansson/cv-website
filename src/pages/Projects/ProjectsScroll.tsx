@@ -8,7 +8,7 @@ type Picture = {
   height: string,
   cropmode: string
 }
-type Project = {
+export type Project = {
   title: string, url: string, picture: Picture, description: string
 }
 export type Projects = Project[];

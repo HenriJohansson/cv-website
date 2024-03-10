@@ -1,6 +1,7 @@
 
 .projects {
   z-index: 1;
+  height: fit-content;
 }
 
 .projectList {
@@ -24,5 +25,12 @@
   width: 100%;
   text-align: center;
   border-radius: 0 0 0.5rem  0;
+}
+@media screen and (max-width: 600px) {
+  .projectList {
+    overflow-x: auto;
+    grid-auto-columns: 100%;
+    grid-template-columns: none;
+  }
 }
 

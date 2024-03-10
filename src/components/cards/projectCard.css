@@ -10,6 +10,10 @@
   max-width: "100%"
 }
 
+.projectTitle {
+  font: 20px "Poppins" !important;
+}
+
 .insideContainer {
   background-color: var(--clr-primary-background);
 }
@@ -25,5 +29,10 @@
 @media (hover: none) {
   .projectCard:hover {
     background-color: transparent;
+  }
+}
+@media screen and (max-width: 400px) {
+  .projectCard {
+    margin: 0.5rem;
   }
 }

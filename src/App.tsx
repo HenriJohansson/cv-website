@@ -11,6 +11,7 @@ import Introduction from '@components/Introduction/Introduction';
 import Connect from '@components/Connect/Connect';
 import { ProjectsScroll } from '@pages/projects/ProjectsScroll';
 import ErrorBoundary from '@components/errorhandling/ErrorBoundary';
+import Title from '@components/Title/Title';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Introduction></Introduction>
       <Connect></Connect>
       <ErrorBoundary fallback={<></>}>
+        <Title name="Projects" className="projectsTitle"></Title>
         <ProjectsScroll></ProjectsScroll>
       </ErrorBoundary>
       <div className='emptySpace' style={{ height: "400px", background: "transparent", zIndex: -1}}></div>
