@@ -9,7 +9,7 @@ import NavBarManager from '@components/navigation/NavManager/NavManager';
 //import PageInnitialLoad from '@components/PageInnitialLoad/PageInnitialLoad';
 import Introduction from '@components/Introduction/Introduction';
 import Connect from '@components/Connect/Connect';
-import { Projects } from '@pages/Projects/Projects';
+import { ProjectsScroll } from '@pages/projects/ProjectsScroll';
 import ErrorBoundary from '@components/errorhandling/ErrorBoundary';
 
 function App() {
@@ -21,9 +21,9 @@ function App() {
       <Introduction></Introduction>
       <Connect></Connect>
       <ErrorBoundary fallback={<></>}>
-        <Projects></Projects>
+        <ProjectsScroll></ProjectsScroll>
       </ErrorBoundary>
-      <div className='emptySpace' style={{ height: "400px", background: "transparent"}}></div>
+      <div className='emptySpace' style={{ height: "400px", background: "transparent", zIndex: -1}}></div>
 
       {/* Absolute elements defined on the bottom */}
       <NavBarManager></NavBarManager>
