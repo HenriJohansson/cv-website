@@ -27,10 +27,10 @@
 
   /* Color Tertiary */
   --clr-tertiary: #8AB754;
-  --clr-tertiary-1: ;
-  --clr-tertiary-2: ;
-  --clr-tertiary-3: ;
-  --clr-tertiary-4: ;
+  --clr-tertiary-o80: rgba(138, 183, 84, 0.8);
+  --clr-tertiary-o50: rgba(138, 183, 84, 0.5);
+  --clr-tertiary-o30: rgba(138, 183, 84, 0.3);
+  --clr-tertiary-o20: rgba(138, 183, 84, 0.2);
   --clr-tertiary-5: ;
   --clr-tertiary-6: ;
   --clr-tertiary-7: ;
