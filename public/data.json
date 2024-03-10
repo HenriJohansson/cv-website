@@ -2,10 +2,24 @@
   "pictureUrlEndPoint": "https://ik.imagekit.io/henrijbusiness/Cv-Site/",
   "projects": [
     {
-      "name": "Python Backend for Wolt Internship Assignment",
+      "title": "Python Backend for Wolt Assignment",
       "url": "https://github.com/HenriJohansson/Wolt_2024_Engineering_Internship_Assignment",
-      "picturePath":"WoltReindeer.png",
-      "alt": "Picture of Wolt Reindeers"
+      "picture": {
+        "path":"WoltReindeer.png",
+        "alt": "Picture of Wolt Reindeers",
+        "cropmode":"extract"
+      },
+      "description": "A simple well tested Flask HTTP endpoint for calculating travel distance"
+    },
+    {
+      "title": "First Game I Created",
+      "url": "https://henrijohansson.itch.io/prison-breaker",
+      "picture": {
+        "path":"Game_Preview.png",
+        "alt": "Picture of Preview of The First Game I created",
+        "cropmode":"extract"
+      },
+      "description": "A Game created in Unity back in first year using C#. The game includes systems like entity pooling and vector calculations"
     }
   ]
 }
