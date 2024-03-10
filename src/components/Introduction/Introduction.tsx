@@ -1,15 +1,16 @@
 
 import "@components/Introduction/introduction.css";
-import { useFetchText } from "@/hooks/TextFetch";
 
 export const Introduction = () => {
-  const text = useFetchText("introduction.txt")
   return (
     <>
       <section>
         <div id="introduction">
           <p>
-          {text}
+          I am a coder by heart &#128153; diving deep into the world of software development.
+          Currently studying Computer Science, I'm all about coding and creating cool stuff.
+          From back-end to front-end and everything in between,
+          I'm up for the challenge.
           </p>
         </div>
       </section>
