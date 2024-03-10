@@ -16,7 +16,6 @@ import Title from '@components/Title/Title';
 function App() {
   return (
     <ThemeProvider theme={theme}>
-
       <div className="bgPattern"></div>
       <Header></Header>
       <Introduction></Introduction>
