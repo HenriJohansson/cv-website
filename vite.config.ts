@@ -20,6 +20,7 @@ export default defineConfig(({ command, mode, isSsrBuild, isPreview }: ConfigEnv
     base: '/cv-website/',
     resolve: {
       alias: {
+        '@*': fileURLToPath(new URL('./src/*', import.meta.url)),
         '@tests': fileURLToPath(new URL('./tests', import.meta.url)),
         '@pages': fileURLToPath(new URL('./src/pages', import.meta.url)),
         '@styles': fileURLToPath(new URL('./src/styles', import.meta.url)),
@@ -27,7 +28,6 @@ export default defineConfig(({ command, mode, isSsrBuild, isPreview }: ConfigEnv
         '@components': fileURLToPath(new URL('./src/components', import.meta.url)),
         '@store': fileURLToPath(new URL('./src/store', import.meta.url)),
         '@hooks': fileURLToPath(new URL('./src/hooks', import.meta.url)),
-        '@*': fileURLToPath(new URL('./src/*', import.meta.url)),
       },
     }
   }
