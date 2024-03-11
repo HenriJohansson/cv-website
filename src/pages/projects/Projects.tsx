@@ -1,5 +1,5 @@
 import ProjectCard from "@components/cards/ProjectCard"
-import "@pages/Projects/projects.css"
+import "@pages/projects/projects.css"
 import { IKImageProps } from "imagekitio-react/dist/types/components/IKImage/combinedProps";
 import { Projects as ProjectsType } from "./ProjectsScroll";
 import { Project as ProjectType } from "./ProjectsScroll"
