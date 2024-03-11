@@ -2,7 +2,6 @@
   display: grid;
   margin: 2rem;
   overflow-x: hidden;
-  scroll-snap-align: start;
   border-radius: 1rem;
 }
 .projectCard > img {
@@ -34,5 +33,8 @@
 @media screen and (max-width: 400px) {
   .projectCard {
     margin: 0.5rem;
+
+    scroll-padding-inline-start: 0.5rem;
+    scroll-padding-inline-end: 0.5rem;
   }
 }
