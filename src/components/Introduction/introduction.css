@@ -11,7 +11,7 @@
   transition: left 1s ease-in, right 1s ease-in;
 }
 #introduction p {
-  margin: 0 3rem 0 3rem;
+  margin: 0 2rem 0 3rem;
 }
 
 #introduction_divider {

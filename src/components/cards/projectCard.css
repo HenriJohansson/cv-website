@@ -1,0 +1,38 @@
+.projectCard {
+  display: grid;
+  margin: 2rem;
+  overflow-x: hidden;
+  scroll-snap-align: start;
+  border-radius: 1rem;
+}
+.projectCard > img {
+  object-fit: "cover";
+  max-width: "100%"
+}
+
+.projectTitle {
+  font: 20px "Poppins" !important;
+}
+
+.insideContainer {
+  background-color: var(--clr-primary-background);
+}
+.projectCard:hover{
+  scale: 1.04;
+  transform: rotate3d(1, 5, 1, 10deg);
+  transition: transform 0.3s ease;
+}
+.projectCard:hover > .insideContainer {
+  background: var(--clr-secondary-o80);
+  color: var(--clr-primary-background);
+}
+@media (hover: none) {
+  .projectCard:hover {
+    background-color: transparent;
+  }
+}
+@media screen and (max-width: 400px) {
+  .projectCard {
+    margin: 0.5rem;
+  }
+}

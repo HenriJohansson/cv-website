@@ -1,11 +1,8 @@
-import HyperLink from '@components/Links/HyperLink';
+import HyperLink from '@components/links/HyperLink';
 import ExpandingWaveCircle from '@components/effects/ExpandingWaveCircle';
-import { addNewId } from '@functions/idGenerator';
 import { useState } from 'react';
 
 const NavCv = () => {
-
-  addNewId("link"); //adds new id called link in id generator
 
   const [mouseEntered, setMouseEntered] = useState(false)
 

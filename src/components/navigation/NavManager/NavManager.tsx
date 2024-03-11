@@ -1,4 +1,3 @@
-import { addNewId } from '@functions/idGenerator';
 import { useWindowDimensions } from '@components/util/WindowDimensions'
 import { useEffect, useState} from 'react';
 //import NavBar from '../Nav/NavBar';
@@ -21,8 +20,6 @@ const NavBarManager = () => {
 
   }, [windowDim.width])
 
-  addNewId("link"); //adds new id called link in id generator
-  /* */
   if (showBottom) {
     return <NavBarBottom></NavBarBottom>
   }

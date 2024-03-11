@@ -2,4 +2,8 @@
   --section-h: 20rem;
   --section-w: 100%;
   --section-offset: calc(var(--section-w) / 3);
+
+  --screen-small: 400px;
+  --screen-medium: 770px;
+  --screen-high: 1000px;
 }

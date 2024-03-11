@@ -1,10 +1,9 @@
 import { useEffect, useState } from 'react';
 import LinearProgress from '@mui/material/LinearProgress';
-import HyperLink from '@components/Links/HyperLink';
+import HyperLink from '@components/links/HyperLink';
 import { Download } from '@components/Icons/Download';
 import { useWindowDimensions } from '@components/util/WindowDimensions';
 import { X } from '@components/Icons/X';
-
 
 function Cv() {
   const [loading, setLoading] = useState(true);
@@ -34,12 +33,15 @@ function Cv() {
     }
   },[windowDims.width])
 
+
+
   const styleiFrame = {
     display: "block",
     height: "100%",
     width: width,
     border: 0,
-    }
+  }
+
   return (
     <div className="content">
       {loading ? (<LinearProgress />) : null}

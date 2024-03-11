@@ -1,4 +1,4 @@
-import HyperLink from "@components/Links/HyperLink";
+import HyperLink from "@components/links/HyperLink";
 import { GitHub } from "@components/Icons/Github";
 import "@components/Connect/connect.css";
 import { LinkedIn } from "@components/Icons/LinkedIn";

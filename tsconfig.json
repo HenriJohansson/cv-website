@@ -25,14 +25,13 @@
 
     /* Paths to avoid ts errors, real paths are set by vite.config.ts */
     "paths": {
-      "@*": ["./src/*"],
       "@pages/*": ["./src/pages/*"],
       "@styles/*": ["./src/styles/*"],
       "@functions/*": ["./src/functions/*"],
       "@components/*": ["./src/components/*"],
-      "@tests/*": ["./tests/*"],
       "@store/*": ["./src/store/*"],
-      "@hooks/*":["./src/hooks"],
+      "@hooks/*":["./src/hooks/*"],
+      "@*": ["./src/*"],
     }
   },
   "include": ["src", "tests/**/*.ts"],
