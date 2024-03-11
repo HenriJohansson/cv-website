@@ -2,7 +2,7 @@
 @import 'sizes.css';
 @import 'scrollbar.css';
 @import '@components/util/Popup/popup.css';
-@import "@components/Links/link.css";
+@import "@components/links/link.css";
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Viga&display=swap');
 @import '@components/navigation/Nav/nav.css';
 @import '@pages/Cv/Cv.css';
