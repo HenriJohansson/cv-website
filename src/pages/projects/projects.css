@@ -16,9 +16,13 @@
   overscroll-behavior-inline: contain;
   scroll-snap-type: inline mandatory;
   scroll-padding-inline-start: 2rem;
+  scroll-padding-inline-end: 2rem;
   grid-template-columns: minmax(0, 1fr) 50%;
 }
-.projectList :last-child {
+.projectList > :last-child {
+  scroll-snap-align: end;
+}
+.projectList > :first-child {
   scroll-snap-align: end;
 }
 .projectTitle {
