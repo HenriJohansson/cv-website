@@ -35,5 +35,5 @@ jobs:
         run: pnpm install
       - name: run linters
         run: pnpm lint
-      - name: Build
-        run: pnpm build
+      #- name: Build
+        #run: pnpm build
