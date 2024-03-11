@@ -1,5 +1,5 @@
 import { defineConfig, mergeConfig } from 'vitest/config'
-import { fileURLToPath } from 'url'
+import path from 'path'
 import viteConfig from './vite.config'
 
 export default defineConfig(configEnv => mergeConfig(
@@ -10,13 +10,13 @@ export default defineConfig(configEnv => mergeConfig(
     },
     resolve: {
       alias: {
-        '@/*': fileURLToPath(new URL('./*', import.meta.url)),
-        '@tests': fileURLToPath(new URL('./tests', import.meta.url)),
-        '@pages': fileURLToPath(new URL('./src/pages', import.meta.url)),
-        '@styles': fileURLToPath(new URL('./src/styles', import.meta.url)),
-        '@functions': fileURLToPath(new URL('./src/functions', import.meta.url)),
-        '@components': fileURLToPath(new URL('./src/components', import.meta.url)),
-        '@hooks': fileURLToPath(new URL('./src/hooks', import.meta.url)),
+        '@/*': path.resolve(__dirname,'./*'),
+        '@tests': path.resolve(__dirname,'./tests'),
+        '@pages': path.resolve(__dirname,'./src/pages'),
+        '@styles': path.resolve(__dirname,'./src/styles'),
+        '@functions': path.resolve(__dirname,'./src/functions'),
+        '@components': path.resolve(__dirname,'./src/components'),
+        '@hooks': path.resolve(__dirname,'./src/hooks'),
       },
     }
   })
