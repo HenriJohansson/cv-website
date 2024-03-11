@@ -10,12 +10,19 @@ test: {
       setupFiles: './tests/setup'
     },
 */
-
+const hash = Math.floor(Math.random() * 90000) + 10000;
 export default defineConfig(({ command, mode, isSsrBuild, isPreview }: ConfigEnv) => {
   return {
     plugins: [react()],
     build: {
-      assetsDir: 'assets'
+      assetsDir: 'assets',
+      rollupOptions: {
+        output: {
+          entryFileNames: `[name]` + hash + `.js`,
+          chunkFileNames: `[name]` + hash + `.js`,
+          assetFileNames: `[name]` + hash + `.[ext]`
+        }
+      }
     },
     base: '/cv-website/',
     resolve: {
