@@ -52,7 +52,7 @@ function Cv() {
         <HyperLink className="close" abbreviationOrIcon={X} href="#"></HyperLink>
       </div>
       <iframe
-        name={"Cv"/*"https://docs.google.com/document/d/e/2PACX-1vSzSr4y3V7X7CZzLts4lhEUw0IN1baK4-uay6OdVYainASBQ7ccySqyVDOQjxAmBMAUUUnWxJ-Z4voa/pub?embedded=true"*/}
+        name={"Cv"}
         src={source}
         onLoad={loadingDone}
         style={styleiFrame}
