@@ -9,7 +9,7 @@
         "alt": "Picture of Wolt Reindeers",
         "cropmode":"extract"
       },
-      "description": "A simple well tested Flask HTTP endpoint for calculating travel distance"
+      "description": "A simple well tested Flask HTTP endpoint for calculating a delivery fee based on multiple delivery details like distance and amount of items"
     },
     {
       "title": "First Game I Created",
