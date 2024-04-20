@@ -7,7 +7,7 @@
     "dev": "vite",
     "test": "vitest",
     "build": "tsc && vite build",
-    "clean-build":"tsc && vite build --force",
+    "clean-build": "tsc && vite build --force",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -44,5 +44,11 @@
     "typescript-plugin-css-modules": "^5.0.2",
     "vite": "^5.0.11",
     "vitest": "^1.2.1"
+  },
+  "pnpm": {
+    "overrides": {
+      "vite@>=5.0.0 <=5.0.11": ">=5.0.12",
+      "vite@>=5.0.0 <=5.0.12": ">=5.0.13"
+    }
   }
 }
