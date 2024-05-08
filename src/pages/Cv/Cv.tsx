@@ -5,28 +5,31 @@ import { Download } from '@components/Icons/Download';
 import { useWindowDimensions } from '@components/util/WindowDimensions';
 import { X } from '@components/Icons/X';
 
+type Cv = {
+  mobile: string, desktop: string, download: string
+}
+
 function Cv() {
   const [loading, setLoading] = useState(true);
-  const [source, setSource] = useState("https://docs.google.com/document/d/e/2PACX-1vSzSr4y3V7X7CZzLts4lhEUw0IN1baK4-uay6OdVYainASBQ7ccySqyVDOQjxAmBMAUUUnWxJ-Z4voa/pub?embedded=true");
+  const [source, setSource] = useState(import.meta.env.VITE_CV_DESKTOP);
   const [disclaimer, setDisclaimer] = useState("");
   const [downloadFull, setDownloadFull] = useState("");
-
   const windowDims = useWindowDimensions()
   const [width, setWidth] = useState(windowDims.width - (16*4) + "px")
   const loadingDone = () => {
     setLoading(false);
   }
-  const googleDocsDownloadLink = "https://docs.google.com/document/d/1Wn6mfjrgqCSfnwH_H8T4rL0XjOp88_zVKDWiBHWsiFE/export?format=pdf";
+  const googleDocsDownloadLink = import.meta.env.VITE_CV_DOWNLOAD;
 
 
   useEffect(() => {
     if(windowDims.width <= 570) {
-      setSource("https://docs.google.com/document/d/e/2PACX-1vTk_Te-1oBj1r7qZu7GYV4MvtDnX6CWXpkwo4YEjboZb0t1lCFcWskgytlytIM1G3TVH4TVQ46IzAXl/pub?embedded=true");
+      setSource(import.meta.env.VITE_CV_MOBILE);
       setDisclaimer("Mobile Version");
       setDownloadFull("Download normal layout ->");
       setWidth(windowDims.width + "px")
     } else {
-      setSource("https://docs.google.com/document/d/e/2PACX-1vSzSr4y3V7X7CZzLts4lhEUw0IN1baK4-uay6OdVYainASBQ7ccySqyVDOQjxAmBMAUUUnWxJ-Z4voa/pub?embedded=true");
+      setSource(import.meta.env.VITE_CV_DESKTOP);
       setDisclaimer("");
       setDownloadFull("");
       setWidth(windowDims.width - (16*4) + "px")
@@ -57,7 +60,7 @@ function Cv() {
         onLoad={loadingDone}
         style={styleiFrame}
         allow="picture-in-picture full">
-        </iframe>
+      </iframe>
     </div>
   );
 }
