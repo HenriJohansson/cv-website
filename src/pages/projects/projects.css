@@ -21,6 +21,11 @@
 .projectList > * {
   scroll-snap-align: end;
 }
+
+.projectList:first-child {
+  scroll-snap-align: start;
+}
+
 .projectTitle {
   width: 100%;
   text-align: center;
