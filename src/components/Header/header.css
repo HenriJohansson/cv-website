@@ -6,7 +6,7 @@ header {
 }
 .header_content {
   background-color: var(--clr-primary);
-  position: absolute;
+  position: relative;
   display: flex;
   flex-direction: row;
   top: 0;

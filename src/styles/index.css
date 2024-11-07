@@ -55,10 +55,13 @@
 * {
   min-width: 0;
 }
-html, body, #app, #app>div {
+body, #app, #app>div {
   min-width:260px;        /* Suppose you want minimum width of 1000px */
   width:100%;
   margin: 0
+}
+html {
+  max-width: 2560px;
 }
 
 a {
@@ -109,4 +112,23 @@ section div {
     border-radius: 0;
   }
 }
-
+@media screen and (min-width: 2200px) {
+  html {
+    zoom:130%
+  }
+}
+@media screen and (min-width: 2500px) {
+  html {
+    zoom:150%
+  }
+}
+@media screen and (min-width: 3200px) {
+  html {
+    zoom:230%
+  }
+}
+@media screen and (min-width: 4000px) {
+  html {
+    zoom:300%
+  }
+}
