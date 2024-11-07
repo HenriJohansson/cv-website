@@ -14,6 +14,7 @@ type Props = {
   target?: boolean,
   className?: string,
   id?: string,
+  order?: number
 }
 
 const ProjectCard = (props: Props) => {
@@ -44,10 +45,13 @@ const ProjectCard = (props: Props) => {
     className={props.className ? props.className : "projectCard link"}
     onMouseEnter={props.onMouseEnter}
     target={props.target ? "_blank" : ""}
+    style={{order: props.order}}
     >
       <div className="insideContainer">
         {props.title ? <h3 className="projectTitle">{props.title}</h3> : null}
-        <IKImage style={{width: props.image.width}} {...props.image} ></IKImage>
+        <div className="imageContainer">
+          <IKImage style={{width: props.image.width}} {...props.image} ></IKImage>
+        </div>
         {props.description ? <p className="projectDescription">{props.description}</p> : null}
       </div>
     </a>
