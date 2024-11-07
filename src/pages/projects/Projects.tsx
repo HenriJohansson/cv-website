@@ -3,6 +3,7 @@ import "@pages/projects/projects.css"
 import { IKImageProps } from "imagekitio-react/dist/types/components/IKImage/combinedProps";
 import { Projects as ProjectsType } from "./ProjectsScroll";
 import { Project as ProjectType } from "./ProjectsScroll"
+//import { useEffect, useRef } from "react";
 
 type Props = {
   pictureUrlEndPoint: string;
@@ -10,8 +11,18 @@ type Props = {
 }
 
 export const Projects = (props: Props) => {
+  const limitImageHeight = "300";
+  /*
+  //Scrollbar starts from other end of the list
+  const ProjectsRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if(ProjectsRef.current) {
+      ProjectsRef.current.scrollLeft = ProjectsRef.current?.scrollWidth - ProjectsRef.current?.clientWidth;
+    }
+  })
+  */
   return (
-    <div className={"projectList"}>
+    <div /* ref={ProjectsRef} */ className={"projectList"}>
       {props.projects.map((project: ProjectType, index: number) => {
         const ikImageProps: IKImageProps = {
           loading: 'lazy',
@@ -26,7 +37,7 @@ export const Projects = (props: Props) => {
           },
           path: project.picture.path,
           transformation: [{
-            height: project.picture.height,
+            height: limitImageHeight,
             width: project.picture.width,
           }],
           urlEndpoint: "https://ik.imagekit.io/henrijbusiness/Cv-Site/",
