@@ -58,7 +58,8 @@
 body, #app, #app>div {
   min-width:260px;        /* Suppose you want minimum width of 1000px */
   width:100%;
-  margin: 0
+  margin: 0;
+  overflow: hidden;
 }
 html {
   max-width: 2560px;
@@ -103,9 +104,10 @@ section {
   max-width: var(--section-w);
   min-height: var(--section-h);
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   h1 {
-    font-size:xx-large;
+    font-size:2.5rem;
+    padding-top: 1rem;
   }
 }
 @media screen and (max-width: 1000px) {
