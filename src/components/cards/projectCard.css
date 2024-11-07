@@ -4,9 +4,15 @@
   overflow-x: hidden;
   border-radius: 1rem;
 }
-.projectCard > img {
+.imageContainer > img {
+  position: relative;
   object-fit: "cover";
-  max-width: "100%"
+  max-width: "100%";
+}
+
+.imageContainer {
+  overflow: hidden;
+  height: 300px;
 }
 
 .projectTitle {
@@ -27,7 +33,9 @@
 }
 @media (hover: none) {
   .projectCard:hover {
-    background-color: transparent;
+    transform: none;
+    transition: none;
+    background-color: var(--clr-primary-background);
   }
 }
 @media screen and (max-width: 400px) {

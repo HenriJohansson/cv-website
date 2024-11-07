@@ -2,6 +2,16 @@
   "pictureUrlEndPoint": "https://ik.imagekit.io/henrijbusiness/Cv-Site/",
   "projects": [
     {
+      "title": "Kuumalinja HTML5 broadcast graphics",
+      "url": "https://yle.fi/aihe/lapset/joulupukin-kuuma-linja",
+      "picture": {
+        "path":"Kuumalinja_Preview.png",
+        "alt": "Placeholder Icon, before Kuumalinja 2024 has been released.",
+        "cropmode":"extract"
+      },
+      "description": "I created the technical side of the upcomming Kuumalinja 2024 HTML5-graphics, this included animations, technical data collection and displaying of the data during the broadcast"
+    },
+    {
       "title": "Python Backend for Wolt Assignment",
       "url": "https://github.com/HenriJohansson/Wolt_2024_Engineering_Internship_Assignment",
       "picture": {
@@ -21,6 +31,11 @@
       },
       "description": "My first Game created using Unity and C#. The game includes systems like entity pooling and vector calculations"
     }
-  ]
+  ],
+  "cv": {
+    "mobile": "https://docs.google.com/document/d/e/2PACX-1vTk_Te-1oBj1r7qZu7GYV4MvtDnX6CWXpkwo4YEjboZb0t1lCFcWskgytlytIM1G3TVH4TVQ46IzAXl/pub?embedded=true",
+    "desktop": "https://docs.google.com/document/d/e/2PACX-1vSzSr4y3V7X7CZzLts4lhEUw0IN1baK4-uay6OdVYainASBQ7ccySqyVDOQjxAmBMAUUUnWxJ-Z4voa/pub?embedded=true",
+    "download": "https://docs.google.com/document/d/1Wn6mfjrgqCSfnwH_H8T4rL0XjOp88_zVKDWiBHWsiFE/export?format=pdf"
+  }
 }
 

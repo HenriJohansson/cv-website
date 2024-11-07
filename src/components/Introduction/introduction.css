@@ -1,5 +1,5 @@
 #introduction {
-  position: absolute;
+  position: relative;
   background-color: var(--clr-tertiary);
   border-radius: 0 1rem 1rem 0;
   padding: calc(var(--section-h)/ 4) 0 calc(var(--section-h)/ 4) 0;
