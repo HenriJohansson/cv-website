@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  height: fit-content;
+  min-height: fit-content; /* overwrite */
 }
 
 .projectsTitle {
@@ -10,7 +10,7 @@
   justify-content: center;
   background-color: var(--clr-secondary);
   width: 50%;
-  height: calc(var(--section-h) / 4);
+  min-height: calc(var(--section-h) / 4);
   border-radius: 1rem;
 }
 
