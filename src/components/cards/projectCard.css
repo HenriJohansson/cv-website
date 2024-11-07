@@ -22,20 +22,15 @@
 .insideContainer {
   background-color: var(--clr-primary-background);
 }
-.projectCard:hover{
-  scale: 1.04;
-  transform: rotate3d(1, 5, 1, 10deg);
-  transition: transform 0.3s ease;
-}
-.projectCard:hover > .insideContainer {
-  background: var(--clr-secondary-o80);
-  color: var(--clr-primary-background);
-}
-@media (hover: none) {
-  .projectCard:hover {
-    transform: none;
-    transition: none;
-    background-color: var(--clr-primary-background);
+@media (hover: hover) {
+  .projectCard:hover{
+    scale: 1.04;
+    transform: rotate3d(1, 5, 1, 10deg);
+    transition: transform 0.3s ease;
+  }
+  .projectCard:hover > .insideContainer {
+    background: var(--clr-secondary-o80);
+    color: var(--clr-primary-background);
   }
 }
 @media screen and (max-width: 400px) {
