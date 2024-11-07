@@ -22,7 +22,7 @@ try{
     if (this.status!==200) {
       console.error("Could not find error.html");
       return;
-    } // or whatever error handling you want
+    }
     const elem = document.getElementById(id)
     if(elem != undefined) {
       elem.innerHTML= this.responseText;
