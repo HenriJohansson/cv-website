@@ -3,13 +3,13 @@
   "projects": [
     {
       "title": "Kuumalinja HTML5 broadcast graphics",
-      "url": "https://yle.fi/aihe/lapset/joulupukin-kuuma-linja",
+      "url": "https://areena.yle.fi/1-3839254",
       "picture": {
         "path":"Kuumalinja_Preview.png",
         "alt": "Placeholder Icon, before Kuumalinja 2024 has been released.",
         "cropmode":"extract"
       },
-      "description": "I created the technical side of the upcomming Kuumalinja 2024 HTML5-graphics, this included animations, technical data collection and displaying of the data during the broadcast"
+      "description": "I created the technical side of the Joulupunkin kuuma linja 2024 using HTML5-graphics, this included animations, data fetching and displaying of the data during the broadcast. This post links to the broadcast available at Yle areena!"
     },
     {
       "title": "Python Backend for Wolt Assignment",
